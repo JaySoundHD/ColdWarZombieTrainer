@@ -19,13 +19,13 @@ namespace ColdWarZombieTrainer.Features
 
         public void PlayerXpMultiplier(float multiplier)
         {
-            _memory.Write(_baseAddress+Offsets.ZMXPScaleBase+Offsets.ZombieXpScaleBase.XPUserReal, multiplier);
+            _memory.Write(_baseAddress+Offsets.XPScaleBase+Offsets.ZombieXpScaleBase.XPUserReal, multiplier);
             //_memory.Write(_baseAddress+Offsets.ZMXPScaleBase+Offsets.ZombieXpScaleBase.XPUserFake, multiplier);
         }
 
         public void GunXpMultiplier(float multiplier)
         {
-            _memory.Write(_baseAddress + Offsets.ZMXPScaleBase + Offsets.ZombieXpScaleBase.XPGun, multiplier);
+            _memory.Write(_baseAddress + Offsets.XPScaleBase + Offsets.ZombieXpScaleBase.XPGun, multiplier);
         }
     }
 }
